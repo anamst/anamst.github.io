@@ -767,6 +767,10 @@ video {
   width: 11rem;
 }
 
+.w-\[380px\] {
+  width: 380px;
+}
+
 .max-w-full {
   max-width: 100%;
 }
@@ -1148,6 +1152,10 @@ video {
 
   .md\:w-2\/3 {
     width: 66.666667%;
+  }
+
+  .md\:w-\[480px\] {
+    width: 480px;
   }
 
   .md\:flex-row {
