@@ -1273,6 +1273,15 @@ video {
   .sm\:p-0 {
     padding: 0px;
   }
+
+  .sm\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .sm\:text-lg {
+    font-size: 2.35rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1600,6 +1609,10 @@ video {
 
   .lg\:text-2xl {
     font-size: 3.25rem;
+  }
+
+  .lg\:leading-10 {
+    line-height: 2.5rem;
   }
 
   .lg\:text-white {
