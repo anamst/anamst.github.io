@@ -38,14 +38,14 @@
 <body>
     <div id="page">
         <!-- HEADER -->
-        <nav class="bg-transparent px-10 lg:px-36 py-4 fixed w-screen z-10 inset-x-0 top-0 flex justify-between items-center">
+        <nav class="bg-transparent px-10 lg:px-36 py-0 lg:py-4 fixed w-screen z-10 inset-x-0 top-0 flex justify-between items-center">
 
             <a href="https://ntl.hr/" target="_blank">
                 <div class="flex justify-between items-center">
                     <svg width="51" height="42" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M4.68 21.31 30.96 4.74M4.68 21.31h41.7M4.68 21.31l24.47 15.82" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
-                    <p class="text-white text-lg inline pl-2 font-pink">NATRAG NA NTL.hr</p>
+                    <p class="text-white text-base lg:text-lg inline pl-2 font-pink">NATRAG NA NTL.hr</p>
                 </div>
             </a>
 
@@ -106,30 +106,28 @@
 
         </nav>
         <section class="bg-red lg:h-screen lg:bg-contain xl:bg-cover lg:bg-no-repeat lg:bg-[url('./images/hero.png')] pt-20">
-            <img src="./src/images/hero-sm.svg" class="lg:hidden" />
+            <img src="./src/images/hero-sm.png" class="lg:hidden -mt-20" />
         </section>
-        <section class="bg-red bg-contain lg:bg-no-repeat lg:bg-cover px-4 lg:px-20 2xl:px-32" style="background-image: url('./src/images/bg-line.png');">
+        <section class="bg-red bg-contain lg:bg-no-repeat lg:bg-cover px-10 lg:px-20 2xl:px-32" style="background-image: url('./src/images/bg-line.png');">
             <div class="flex flex-col justify-around items-center lg:py-20">
                 <h1 class="uppercase text-white text-center text-2xl py-8 px-10 font-ariston lg:px-32" data-aos="fade-down" data-aos-duration="500">upoznaj gradske prijatelje na ntele farmi</h1>
                 <a href="#video">
                     <button class="border border-gray-light shadow-lg shadow-dark-shadow rounded-full bg-white text-center text-lg uppercase py-4 px-12 pr-8 font-pink lg:text-base">pogledaj video</button>
                 </a>
             </div>
-            <div id="igre" class="lg:py-20">
+            <div id="igre" class="lg:pb-20">
                 <h1 class="uppercase text-white text-center text-2xl pt-24 px-10 font-ariston" data-aos="fade-down" data-aos-duration="500">zaigraj zanimljive igre s našim junacima</h1>
-                <div class="flex flex-col-reverse justify-around items-center md:flex-row md:justify-around md:items-center xl:px-16">
-                    <img data-aos="fade-left" data-aos-duration="500" src="./src/images/mobile.png" class="hidden lg:block lg:w-2/3" />
-                    <div data-aos="fade-right" data-aos-duration="500" class="flex flex-col justify-between items-center">
-                        <div class="mx-auto">
-                            <a class="flex justify-center items-center relative py-10">
-                                <button>
-                                <img src="./src/images/Asset 31.png" />
+                <div class="flex flex-col justify-around items-center md:flex-row md:justify-around md:items-center xl:px-16">
+                    <img data-aos="fade-left" data-aos-duration="500" src="./src/images/mobile.png" class="lg:w-2/3" />
+                    <div data-aos="fade-right" data-aos-duration="500" class="flex flex-col justify-between items-center lg:pr-5">
+                        <a href="">
+                            <button>
+                                <img src="./src/images/Asset 31.png" class="w-2/3 lg:w-full mx-auto" />
                                </button>
-                            </a>
-                            <p class="text-base text-white text-center uppercase font-pink">...ili preuzmi N-TELE aplikaciju i igraj na mobitelu</p>
-                            <a href=""><img src="./src/images/appstore.svg" class="w-1/3 mx-auto pt-10" /></a>
-                            <a href=""><img src="./src/images/gplay.svg" class="w-1/3 mx-auto py-8" /></a>
-                        </div>
+                        </a>
+                        <p class="text-base text-white text-center uppercase font-pink">...ili preuzmi N-TELE aplikaciju i igraj na mobitelu</p>
+                        <a href=""><img src="./src/images/appstore.svg" class="w-2/5 lg:w-1/3 mx-auto pt-8" /></a>
+                        <a href=""><img src="./src/images/gplay.svg" class="w-2/5 lg:w-1/3 mx-auto pt-4" /></a>
                     </div>
                 </div>
                 <div class="flex flex-col lg:flex-row lg:flex-wrap justify-around items-center px-4 lg:px-8 py-8 2xl:px-64">
@@ -167,74 +165,87 @@
                 <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="relative h-0 overflow-hidden max-w-full w-full border-4 border-white mb-6" style="padding-bottom: 56.25%">
                     <iframe src="https://www.youtube-nocookie.com/embed/rXH2nlewl6A" frameborder="0" allowfullscreen class="absolute top-0 left-0 w-full h-full"></iframe> </div>
             </div>
-            <div class="hidden lg:flex lg:flex-row lg:justify-center lg:items-center lg:bg-contain lg:bg-no-repeat lg:bg-center lg:bg-[url('./images/carousel.png')] py-28 lg:py-40 px-10 lg:px-36">
+            <div class="lg:hidden">
+                <img src="./src/images/grupa.png" />
+            </div>
+            <div class="hidden lg:flex lg:flex-row lg:justify-center lg:items-center lg:bg-contain lg:bg-no-repeat lg:bg-center lg:bg-[url('./images/carousel.png')] py-28 lg:py-32 px-10 lg:px-36">
                 <a href="#oli" class="flex flex-col justify-center items-center hover:scale-125">
-                    <img src="./src/images/oli-toy.png" class="-mr-28" />
-                    <img src="./src/images/oli.png" class="w-28 -mt-4 -mr-28" />
+                    <img src="./src/images/oli-toy.png" class="" />
+                    <img src="./src/images/oli.png" class="w-28 -mt-4" />
                 </a>
                 <a href="#bani" class="flex flex-col justify-center items-center hover:scale-125">
-                    <img src="./src/images/bani-toy.png" class="-mr-16" />
-                    <img src="./src/images/bani.png" class="w-28 -mt-4 -mr-16" />
+                    <img src="./src/images/bani-toy.png" class="" />
+                    <img src="./src/images/bani.png" class="w-28 -mt-4" />
                 </a>
                 <a href="#fifi" class="flex flex-col justify-center items-center hover:scale-125">
                     <img src="./src/images/fifi-toy.png" class="" />
-                    <img src="./src/images/fifi.png" class="w-28 -mt-4 " />
+                    <img src="./src/images/fifi.png" class="w-28" />
                 </a>
                 <a href="#miki" class="flex flex-col justify-center items-center hover:scale-125">
-                    <img src="./src/images/miki-toy.png" class="-ml-16" />
-                    <img src="./src/images/miki.png" class="w-28 -mt-8 -ml-16 " />
+                    <img src="./src/images/miki-toy.png" class="" />
+                    <img src="./src/images/miki.png" class="w-28 -mt-8" />
                 </a>
                 <a href="#gricko" class="flex flex-col justify-center items-center hover:scale-125">
-                    <img src="./src/images/gricko-toy.png" class="-ml-32" />
-                    <img src="./src/images/gricko.png" class="w-32 -mt-4 -ml-32 " />
+                    <img src="./src/images/gricko-toy.png" class="" />
+                    <img src="./src/images/gricko.png" class="w-32 -mt-4" />
                 </a>
             </div>
             <div id="fifi">
-                <div class="flex flex-col justify-center items-center lg:py-20">
-                    <img src="./src/images/fifi-novi.png" />
+                <div class="flex flex-col justify-center items-center">
+                    <img src="./src/images/fifi-novi.png" class="hidden lg:block lg:px-10" />
+                    <img src="./src/images/fifi-sm.png" class="lg:hidden pt-5" />
+                    <img src="./src/images/fifi-art.png" class="-mt-12 lg:hidden pb-4" />
                     <div class="container px-4 lg:px-48 xl:px-80 2xl:px-96">
                         <div data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="relative h-0 overflow-hidden max-w-full w-full border-4 border-white mb-6" style="padding-bottom: 56.25%">
                             <iframe src="https://www.youtube-nocookie.com/embed/rXH2nlewl6A" frameborder="0" allowfullscreen class="absolute top-0 left-0 w-full h-full"></iframe> </div>
                     </div>
                 </div>
             </div>
-            <div id="miki">
-                <div class="flex flex-col justify-center items-center lg:py-20">
-                    <img src="./src/images/miki-novi.png" />
+            <div id="miki" class="lg:pb-32">
+                <div class="flex flex-col justify-center items-center">
+                    <img src="./src/images/miki-novi.png" class="hidden lg:block lg:px-10" />
+                    <img src="./src/images/miki-sm.png" class="lg:hidden" />
+                    <img src="./src/images/miki-art.png" class="lg:hidden" />
                     <div class="container px-4 lg:px-48 xl:px-80 2xl:px-96">
                         <div data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="relative h-0 overflow-hidden max-w-full w-full border-4 border-white mb-6" style="padding-bottom: 56.25%">
                             <iframe src="https://www.youtube-nocookie.com/embed/rXH2nlewl6A" frameborder="0" allowfullscreen class="absolute top-0 left-0 w-full h-full"></iframe> </div>
                     </div>
                 </div>
             </div>
-            <div id="gricko" class="pt-20">
-                <div class="flex flex-col justify-center items-center lg:py-20">
-                    <img src="./src/images/gricko-novi.png" />
+            <div id="gricko" class="lg:pb-32">
+                <div class="flex flex-col justify-center items-center">
+                    <img src="./src/images/gricko-novi.png" class="hidden lg:block lg:px-14" />
+                    <img src="./src/images/gricko-sm.png" class="lg:hidden" />
+                    <img src="./src/images/gricko-art.png" class="lg:hidden pb-4" />
                     <div class="container px-4 lg:px-48 xl:px-80 2xl:px-96">
                         <div data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="relative h-0 overflow-hidden max-w-full w-full border-4 border-white mb-6" style="padding-bottom: 56.25%">
                             <iframe src="https://www.youtube-nocookie.com/embed/rXH2nlewl6A" frameborder="0" allowfullscreen class="absolute top-0 left-0 w-full h-full"></iframe> </div>
                     </div>
                 </div>
             </div>
-            <div id="bani" class="pt-20">
-                <div class="flex flex-col justify-center items-center lg:py-20">
-                    <img src="./src/images/bani-novi.png" />
+            <div id="bani" class="lg:pb-36">
+                <div class="flex flex-col justify-center items-center">
+                    <img src="./src/images/bani-novi.png" class="hidden lg:block lg:px-14 lg:pt-6" />
+                    <img src="./src/images/bani-sm.png" class="lg:hidden pt-12" />
+                    <img src="./src/images/bani-art.png" class="lg:hidden -mt-12 pb-5" />
                     <div class="container px-4 lg:px-48 xl:px-80 2xl:px-96">
                         <div data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="relative h-0 overflow-hidden max-w-full w-full border-4 border-white mb-6" style="padding-bottom: 56.25%">
                             <iframe src="https://www.youtube-nocookie.com/embed/rXH2nlewl6A" frameborder="0" allowfullscreen class="absolute top-0 left-0 w-full h-full"></iframe> </div>
                     </div>
                 </div>
             </div>
-            <div id="oli" class="pt-20">
-                <div class="flex flex-col justify-center items-center lg:py-20">
-                    <img src="./src/images/oli-novi.png" />
+            <div id="oli" class="pb-20 lg:pb-40">
+                <div class="flex flex-col justify-center items-center">
+                    <img src="./src/images/oli-novi.png" class="hidden lg:block lg:px-14" />
+                    <img src="./src/images/oli-sm.png" class="lg:hidden pt-4" />
+                    <img src="./src/images/oli-art.png" class="lg:hidden pb-4" />
                     <div class="container px-4 lg:px-48 xl:px-80 2xl:px-96">
                         <div data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="relative h-0 overflow-hidden max-w-full w-full border-4 border-white mb-6" style="padding-bottom: 56.25%">
                             <iframe src="https://www.youtube-nocookie.com/embed/rXH2nlewl6A" frameborder="0" allowfullscreen class="absolute top-0 left-0 w-full h-full"></iframe> </div>
                     </div>
                 </div>
             </div>
-            <div id="kako-do" class="pt-40 lg:py-20">
+            <div id="kako-do" class="lg:py-20 pt-16">
                 <div class="text-center text-white py-4 px-4 lg:px-20 flex flex-col justify-around items-center">
                     <h1 data-aos="fade-down" data-aos-duration="500" class="text-lg md:text-2xl uppercase pb-4 font-ariston">kako do plišanih junaka s popustom?</h1>
                     <p data-aos="fade-down" data-aos-duration="500" class="text-base py-4 font-pink">Za svakih potrošenih 50 kn/ 6,64 EUR u trgovinama Grupe NTL dobivaš jednu „N“ naljepnicu. </br>
@@ -244,23 +255,24 @@
                     <p data-aos="fade-down" data-aos-duration="500" class="text-base py-4 font-pink">Ako si jako nestrpljiv plišane junake možeš kupiti odmah po punoj cijeni. </p>
                     <p data-aos="fade-down" data-aos-duration="500" class="text-base py-4 font-pink">Ponuda vrijedi do isteka zaliha.</p>
                 </div>
-                <div class="flex flex-col md:flex-row justify-around items-center xl:px-16">
-                    <img data-aos="fade-left" data-aos-duration="500" src="./src/images/asset1.svg" class="w-96 h-auto xl:w-1/3" />
-                    <div class="border-l-4 md:border-l-0 border-r-0 border-b-0 md:h-0 md:border-t-4 border-white border-dotted h-44 md:w-56 lg:w-28"></div>
-                    <img data-aos="fade-right" data-aos-duration="500" src="./src/images/asset2.svg" class="w-96 h-auto xl:w-1/3" />
+                <div class="flex flex-row justify-around items-center xl:px-16">
+                    <img data-aos="fade-left" data-aos-duration="500" src="./src/images/asset1.svg" class="w-40 lg:w-96 h-auto xl:w-1/3" />
+                    <div class="border-l-0 border-r-0 border-b-0 border-t-4 border-white border-dotted h-0 w-20 md:w-56 lg:w-28"></div>
+                    <img data-aos="fade-right" data-aos-duration="500" src="./src/images/asset2.svg" class="w-40 lg:w-96 h-auto xl:w-1/3" />
                 </div>
                 <div class="flex flex-col justify-around items-center py-8">
                     <button class="border border-gray-light shadow-lg shadow-dark-shadow rounded-full bg-white text-center text-lg uppercase py-4 px-12 pr-8 font-pink lg:text-base">preuzmi letak</button>
-                    <img data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" src="./src/images/upute.png" class="pt-10 lg:w-3/5" />
+                    <img data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" src="./src/images/upute.png" class="pt-10 w-4/5 lg:w-3/5" />
                 </div>
             </div>
         </section>
         <section class="bg-red">
             <img src="./src/images/svi.png" class="hidden lg:block lg:w-full" />
+            <img src="./src/images/bottom-sm.png" class="lg:hidden w-full" />
         </section>
-        <section class=" bg-red lg:bg-contain xl:bg-cover lg:bg-no-repeat  lg:bg-[url('./images/proizvodi-bot.png')] -mt-2 py-24 xl:pb-36 2xl:pb-96 relative xl:px-12">
-            <div class="absolute top-4 left-4 md:left-32 lg:top-0 xl:top-4 md:w-2/3  lg:left-44 2xl:left-96 2xl:top-14">
-                <h1 data-aos="fade-down" data-aos-duration="500" class="text-white text-center text-special 2xl:text-2xl font-gardenia">Kupnjom navedenih proizvoda u razdoblju 08.09. - 21.09.2022. dobivaš dodatnu „N“ naljepnicu.</h1>
+        <section class=" bg-red lg:bg-contain xl:bg-cover lg:bg-no-repeat  lg:bg-[url('./images/proizvodi-bot.png')] -mt-2 py-24  xl:pb-36 2xl:pb-96 relative xl:px-12">
+            <div class="absolute px-10 md:px-0 top-4 left-4 md:left-32 lg:top-1 xl:top-4 md:w-2/3  lg:left-44 2xl:left-96 2xl:top-14">
+                <h1 data-aos="fade-down" data-aos-duration="500" class="text-white text-center text-base xl:text-special 2xl:text-2xl font-gardenia">Kupnjom navedenih proizvoda u razdoblju 08.09. - 21.09.2022. dobivaš dodatnu „N“ naljepnicu.</h1>
             </div>
             <div class="relative w-[380px] md:w-[480px] 2xl:w-[680px] mx-auto pt-32 2xl:pt-48">
                 <div class="slide relative">
@@ -319,16 +331,16 @@
 
         </section>
         <!-- FOOTER -->
-        <footer class="bg-red pt-40 px-4 pb-4 lg:py-8 lg:px-36">
+        <footer class="bg-red md:pt-40 px-4 pb-4 lg:py-8 lg:px-36">
 
             <div class="flex flex-col justify-between items-center md:flex-row">
                 <div class="flex flex-col justify-between items-center">
                     <a href="https://ntl.hr/" target="_blank"><img src="./src/images/ntl-logo.svg" /></a>
                     <p class="text-white text-sm text-center font-pink">Copyright NTL 2022.</p>
                 </div>
-                <a class="text-white text-base text-center no-underline font-ariston" href="https://ntl.hr/" target="_blank">www.ntl.hr</a>
+                <a class=" text-white text-base text-center no-underline font-ariston" href="https://ntl.hr/" target="_blank">www.ntl.hr</a>
 
-                <div class="flex flex-row justify-between items-center">
+                <div class="hidden lg:flex lg:flex-row lg:justify-between lg:items-center">
                     <p class="text-white text-sm text-center w-44 px-4 font-pink">Skeniraj QR kod, preuzmi N-TELE aplikaciju i zaigraj zanimljive igre s našim junacima!</p>
                     <img src="./src/images/qr.svg" class="w-32 h-auto" />
                 </div>
